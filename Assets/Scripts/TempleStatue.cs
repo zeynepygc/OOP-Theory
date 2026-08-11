@@ -1,0 +1,44 @@
+using UnityEngine;
+
+public abstract class TempleStatue : MonoBehaviour
+{
+    [Header("Statue Info")]
+    [SerializeField] private string deityName;
+    [SerializeField] private string mantra;
+    [SerializeField] private Color glowColor = Color.white;
+
+    [Header("Particle Effect")]
+    [SerializeField] private ParticleSystem particleEffect;
+
+    // Encapsulation
+    public string GetDeityName() { return deityName; }
+    public string GetMantra() { return mantra; }
+    public Color GetGlowColor() { return glowColor; }
+
+    // Abstraction
+    public virtual void Interact()
+    {
+
+        PlayParticleEffect();
+
+        string[] messages = new string[]
+        {
+            $"{deityName} glows with divine light!",
+            GetDisplayBlessing(),
+            "May this blessing guide you on your journey."
+        };
+
+        UIManager.Instance.ShowBlessingSequence(messages, 3f); // 3 seconds per message
+    }
+
+    private void PlayParticleEffect()
+    {
+        if (particleEffect != null)
+        {
+            particleEffect.Play();
+        }
+    }
+
+    // Polymorphism
+    public abstract string GetDisplayBlessing();
+}
