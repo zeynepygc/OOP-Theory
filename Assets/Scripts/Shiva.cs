@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE : ShivaLingam inherits from TempleStatue base class
 public class ShivaLingam : TempleStatue
 {
     public override string GetDisplayBlessing()

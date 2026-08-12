@@ -9,11 +9,11 @@ public abstract class TempleStatue : MonoBehaviour
     [Header("Particle Effect")]
     [SerializeField] private ParticleSystem particleEffect;
 
-    // Encapsulation
+    // ENCAPSULATION
     public string GetDeityName() { return deityName; }
     public string GetMantra() { return mantra; }
 
-    // Abstraction
+    // ABSTRACTION
     public virtual void Interact()
     {
 
@@ -37,6 +37,6 @@ public abstract class TempleStatue : MonoBehaviour
         }
     }
 
-    // Polymorphism
+    // POLYMORPHISM
     public abstract string GetDisplayBlessing();
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE : RadhaKrishna inherits from TempleStatue base class
 public class RadhaKrishna : TempleStatue
 {
     public override string GetDisplayBlessing()

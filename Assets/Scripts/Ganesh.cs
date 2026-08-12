@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// INHERITANCE : Ganesh inherits from TempleStatue base class
 public class Ganesh : TempleStatue
 {
     public override string GetDisplayBlessing()
