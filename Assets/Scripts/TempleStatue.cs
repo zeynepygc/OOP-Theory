@@ -5,7 +5,6 @@ public abstract class TempleStatue : MonoBehaviour
     [Header("Statue Info")]
     [SerializeField] private string deityName;
     [SerializeField] private string mantra;
-    [SerializeField] private Color glowColor = Color.white;
 
     [Header("Particle Effect")]
     [SerializeField] private ParticleSystem particleEffect;
@@ -13,7 +12,6 @@ public abstract class TempleStatue : MonoBehaviour
     // Encapsulation
     public string GetDeityName() { return deityName; }
     public string GetMantra() { return mantra; }
-    public Color GetGlowColor() { return glowColor; }
 
     // Abstraction
     public virtual void Interact()

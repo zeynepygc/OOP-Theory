@@ -7,6 +7,12 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 5f;
     public float turnSpeed = 100f;
 
+    [Header("Boundaries")]
+    public float minX = -20f;
+    public float maxX = 20f;
+    public float minZ = -29f;
+    public float maxZ = 29f;
+
     private CharacterController controller;
     private Animator animator;
 
@@ -20,6 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
+        BoundPosition();
     }
 
     void HandleRotation()
@@ -36,5 +43,13 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.forward * moveInput;
         controller.Move(move * walkSpeed * Time.deltaTime);
         animator.SetFloat("Speed_f", Mathf.Abs(moveInput));
+    }
+
+    void BoundPosition()
+    {
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.z = Mathf.Clamp(pos.z, minZ, maxZ);
+        transform.position = pos;
     }
 }

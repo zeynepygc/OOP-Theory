@@ -159,7 +159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ganesh
   deityName: Ganesh
   mantra: Om Ganganapati Namo Namaha
-  glowColor: {r: 1, g: 1, b: 1, a: 1}
   particleEffect: {fileID: 2066967722}
 --- !u!114 &135501469
 MonoBehaviour:
@@ -950,7 +949,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RadhaKrishna
   deityName: Krishna
   mantra: Om Namo Bhagavate Vasudevaya
-  glowColor: {r: 1, g: 1, b: 1, a: 1}
   particleEffect: {fileID: 2089713042}
 --- !u!4 &669584914 stripped
 Transform:
@@ -1960,6 +1958,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   walkSpeed: 5
   turnSpeed: 100
+  minX: -30
+  maxX: 27
+  minZ: -32
+  maxZ: 30
 --- !u!65 &1920665306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2002,7 +2004,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 1.3
+  m_StepOffset: 0.7
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
@@ -2139,6 +2141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   walkSpeed: 5
   turnSpeed: 100
+  minX: -10
+  maxX: 10
+  minZ: -10
+  maxZ: 10
 --- !u!143 &1966436904
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2360,7 +2366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShivaLingam
   deityName: Shiva
   mantra: Om Namah Shivaya
-  glowColor: {r: 1, g: 1, b: 1, a: 1}
   particleEffect: {fileID: 1647419557}
 --- !u!114 &2024614911
 MonoBehaviour:
