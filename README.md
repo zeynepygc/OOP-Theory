@@ -1,13 +1,16 @@
-# Temple Blessings
+# Temple Tales
 
 A 3D walkthrough built in Unity, made as a submission challenge for Unity's **Junior Programmer** pathway, demonstrating the four pillars of object-oriented programming.
+
+▶️ Play it here: https://play.unity.com/en/games/8cb8ac00-92f7-4e4a-9c7c-b24e6e043244/temple-tales-oop
 
 ## Overview
 
 The player explores an Indian temple and approaches three sacred statues — **Shiva Lingam**, **Radha-Krishna**, and **Ganesh** — interacting with each to receive its blessing.
 
-![Shiva Lingam blessing](Ekran_görüntüsü_2026-08-12_173404.png)
-![Ganesh blessing](Ekran_görüntüsü_2026-08-12_173433.png)
+<img width="1974" height="1410" alt="Ekran görüntüsü 2026-08-12 173433" src="https://github.com/user-attachments/assets/f6d7e34c-c9a0-49f1-bbb0-e0515ff1d2d4" />
+<img width="1974" height="1410" alt="Ekran görüntüsü 2026-08-12 173433" src="https://github.com/user-attachments/assets/976f37e8-6c06-49d7-a222-d4aee9942060" />
+
 
 ## Controls
 
