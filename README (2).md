@@ -30,6 +30,4 @@ This project was built specifically to demonstrate all four pillars of object-or
 
 - **Unity** (C#)
 
-## Author
 
-Made by [Zeynep Yagci](https://github.com/zeynepygc) — part of learning Unity fundamentals through Unity's Junior Programmer certification path.
